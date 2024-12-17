@@ -4,3 +4,9 @@ allthenews_dataset/
 .venv/
 .env/
 xtra/
+_site/
+*.sh
+_quarto.yml
+assets/
+.audio/
+.insturctions/
