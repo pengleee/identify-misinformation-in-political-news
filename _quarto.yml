@@ -13,7 +13,7 @@ website:
   sidebar:
     tools:
       - icon: github
-        href: https://github.com/dsan-5000/project-5000-identify-misinformation/
+        href: https://github.com/pengleee/identify-misinformation-in-political-news
     # contents: auto
     contents:
       - href: index.qmd
