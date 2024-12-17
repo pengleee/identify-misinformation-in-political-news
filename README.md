@@ -6,6 +6,3 @@
 
 ### Project Homepage
 http://pengli.georgetown.domains/proj5000/
-
-### Google Drive Workspace
-https://drive.google.com/drive/folders/19JIDzldWb6_1jmW8qOpB5XrYSaYhueBV?usp=share_link
