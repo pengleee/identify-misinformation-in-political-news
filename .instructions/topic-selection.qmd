@@ -1,0 +1,75 @@
+# Topic selection  
+
+## Select a broad topic area 
+
+Start by selecting a broad topic area. 
+
+Here are some examples:
+
+- Bio and Health  
+- Climate  
+- Finance and Economics  
+- Public Policy  
+- Materials Discovery  
+- Transportation  
+- Education  
+- Crime and Punishment  
+- Politics and Government  
+- Zoology and Botany  
+- Social Phenomena  
+
+## Narrow your focus
+
+ - Narrow your focus to a topic that can realistically be addressed in a data driven way. 
+   - e.g. `Study the effect of climate change on extreme weather` 
+   - Avoid commonly used topics from Kaggle.
+ - Claim your topic in the "project topic page in the shared documeent"
+   - [click here to claim your topic](https://docs.google.com/spreadsheets/d/1QL3BLRI56oFzG00RcGXGYxEiDGSTD01-0OibOk9gzAE/edit?usp=sharing)
+
+Even if multiple students choose similar topics, each portfolio must be original. Portfolios that are too similar will be reviewed for plagiarism and may result in  Honor Council violation.
+
+## Data Science Questions
+
+The data science life cycle starts with well-posed questions, similar to the scientific method. A data science question is a broad idea that can be broken down into 5 to 10 smaller questions, guiding your investigation.
+
+- "What effect is climate change having on frequency of extreme weather events? e.g hurricane, drought, forest fires, etc"
+
+Here are some additional example questions:
+
+- **Health & Medicine**  
+  - What factors predict heart disease across different age groups?  
+  - How does cancer treatment effectiveness vary by demographics?  
+  - Can wearables predict the onset of diabetes?  
+
+- **Climate & Environment**  
+  - What is the impact of deforestation on regional climates?  
+
+- **Education**  
+  - How do socioeconomic factors affect student performance?  
+  - What is the impact of remote learning post-pandemic?  
+
+- **Social Science & Public Policy**  
+  - How does income inequality correlate with crime rates?  
+  - What factors influence voter turnout?  
+
+- **Finance & Economics**  
+  - What indicators predict stock market crashes?  
+  - How does inflation impact consumer spending?
+
+- **Transportation**  
+  - How has ride-sharing impacted taxi services?  
+  - What are the busiest transportation hubs, and how can congestion be reduced?
+
+- **Crime & Law Enforcement**  
+  - What factors predict recidivism in former inmates?  
+  - How do different policing strategies impact crime rates?
+
+- **Sports & Entertainment**  
+  - What factors predict an athlete's long-term performance?  
+  - Can machine learning predict sports match outcomes?
+
+- **Technology & Social Media**  
+  - How do online reviews impact product sales?  
+  - What strategies drive viral social media campaigns?  
+
+Choose a topic you're passionate about, and develop creative, "outside-the-box" questions to guide your project throughout the course.

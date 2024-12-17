@@ -1,0 +1,97 @@
+# Project instruction:
+
+Author(s): Dr. H and Gerard Pendleton Thurston the 4th
+
+`Note:` You can delete this folder and remove it from the project website once you have read and understood the instructions. It shouldn't be part of your final submission.
+
+**Audio instructions:** 
+
+If you want, you can listen to the instructions:
+
+<audio controls><source src="../audio/instruction-page.mp3" type="audio/mpeg"></audio>
+
+<sup> **Source**: Text-to-speech conversion done with Amazon Polly on AWS </sup>
+
+`Note`: These audio instructions should not be included in your final submission or repository, once you are done wiht them, please delete the files and remove them from the website. 
+
+
+# Overview
+
+Writing and communicating technical information in an understandable way is a critical and highly valued skill. The goal of this project is to create a data science story that explores and explains a particular topic or issue in a data-driven manner. Your portfolio will take the form of a narrative website that you will design. Each website must have a clear flow, be easy to navigate, load quickly, and tell an engaging, well-structured data science story. Additionally, your portfolio should be highly visual, featuring numerous visualizations throughout.
+
+`Framing`: To structure your project, consider framing it in one of the following ways:
+
+- **Academic Paper**: Similar to a peer-reviewed paper, focusing on a data-driven problem.
+- **Industry Project**: You are hired as a data scientist to solve a company problem and present your findings.
+- **Data Story**: A narrative that uses data to tell a compelling story, similar to a data-driven news article from the *New York Times*.
+
+In all three cases, you will need a final "report" for the stakeholder, ensuring transparency with your data, code, and processing methods.
+
+We provide a website skeleton as a starting point for your project. Please do not modify the overall directory structure, though you are free to customize the look and feel. Each page in the skeleton includes specific instructions on what should be covered there.
+
+**OVERALL-GOAL:** `Portfolio website creation`
+
+Creating an impressive portfolio is essential because it becomes something you "own" and can take with you after graduation. It serves as a lasting reminder of the skills and knowledge you’ve gained, and more importantly, it acts as a valuable asset during job interviews. You’ll be able to showcase your work and demonstrate your expertise to potential employers with concrete examples.
+
+This portfolio will be your professional showcase, representing what you’ve accomplished. It will help you stand out in interviews by giving you a tangible way to present your work. **This portfolio is a reflection of you**, so ensure it represents your best work and creativity—make it as awesome as you are!
+
+**DUE DATES:** See the assignment's Canvas page for the due date
+
+**LATE POLICY:** See the syllabus
+
+**MEMBERSHIP**: This project can be completed individually, or as a small group project with up to a maximum of **2 students** per group. You can choose your own group members. 
+
+- `Everyone`, even students working individually, must add themselves to the project group on Canvas (this is tedious but required by the Canvas grading system)
+  - [https://georgetown.instructure.com/courses/193247/groups#tab-28372](https://georgetown.instructure.com/courses/193247/groups#tab-28372)
+- If you choose to work in a group, all group members must contribute equally.
+- Collaboration and teamwork are essential; ensure that the workload is evenly distributed among group members.
+
+**SUBMISSION:**
+
+- The final project will be submitted to Canvas with the following content, you MUST include ALL of the following:
+  - [ ] A URL pointing to your project on GU Domains.
+  - [ ] A URL to your GitHub repository.
+  - [ ] At the very end, print the following pages from your website as PDFs, stitch them into a single PDF
+      - Landing page
+      - Report
+      - Technical details
+        - Data collection
+        - Data cleaning
+        - EDA
+        - unsupervised-learning
+        - supervised-learning
+  - [ ] Upload a compressed zipped directory of your course website AND a compressed zipped directory of your code (without the data files).
+
+`IMPORTANT:` The PDF submission WILL be automatically processed by Canvas in a plagiarism-checking and LLM usage software tool called `turn-it-in`. It is your responsibility to ensure that your submission is original and that you have properly cited all sources.
+
+This is done to have a "static," time-stamped version of your final submission.
+
+
+**OPTIONAL BONUS PRESENTATION**: During the final week of class, you have the opportunity to present your project results for up to +7.5 bonus points. To qualify, you must create a concise 10-minute presentation with an accompanying slide deck. Simply opening your website and talking about it will not be sufficient. Sign-up will be voluntary and will be made available towards the end of the semester. 
+
+# Code
+
+For this project, you can use  R or Python, or both. However, python is recommended, since it is more heavily represented in the class. 
+
+## Python package (optional)
+
+This is an optional component of the project, if you’d like, you can create a dedicated Python package for your project. The source folder for this package should be included in the root of your repository, and it can be imported into your processing scripts used in the various technical-details sections. If you create a package, it should be well-documented, with an additional tab on the navigation bar for the package documentation.
+
+While a package would typically have its own GitHub repository, for this project, please include it within the same repository.
+
+The skeleton for the package is not provided in the repo, but you can recycle what you created in past assignments.
+
+
+ {{< include topic-selection.qmd >}}
+
+ {{< include github-usage.qmd >}}
+
+ {{< include website-structure.qmd >}}
+
+ {{< include expectations.qmd >}}
+
+ {{< include quarto-tips.qmd >}}
+
+ {{< include llm-usage.qmd >}}
+
+ {{< include report_instruction.qmd >}}

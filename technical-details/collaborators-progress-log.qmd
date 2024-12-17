@@ -1,0 +1,79 @@
+---
+title: "Collaborators Progress log"
+---
+
+
+## Member-1: Peng Li
+
+
+**Project contribution log:**
+
+**11-12-2024** 
+
+* [x] Brainstorm the topics and proposals for the project
+
+**11-24-2024** 
+
+* [x] Data Collection: `NEWS` API, `Media Cloud` API, `allthenews` dataset, `LIAR` dataset
+* [x] Write functions to customize the range of news data gathering
+
+**12-09-2024**
+
+* [x] Supervised Learning
+* [x] Sentiment Analysis
+
+**12-12-2024**
+
+* [x] Upload report instruction and example as reference to the websitete, begin sentiment analysis
+
+**12-13-2024**
+
+* [x] Exploratory Data Analysis
+
+**12-14-2024**
+
+* [x] Organize the website directory
+* [x] Add Word Cloud to EDA
+
+**12-16-2024**
+
+* [x] Write the sections of Supervised Learning, Results and Analysis, Conclusion for the report
+* [x] Reformat the `pdf` report to `qmd` to to better showcase on the website
+* [x] Organize the website tabs
+
+## Member-2: Jonah Lichtenthal
+
+
+**Project contribution log:**
+
+
+**11-12-2024** 
+
+* [x] Initial meeting to discuss topics
+
+**11-18-2024** 
+
+* [x] Meet to build landing page, get data, and assign tasks for next meeting
+
+**11-19-2024** 
+
+* [x] Uploaded my section of literature review
+
+**11-26-2024** 
+
+* [x] Cleaned data
+
+**12-12-2024** 
+
+* [x] Attempted to label data with LLM
+* [x] Started unsupervised learning section
+
+**12-13-2024** 
+
+* [x] Finished unsupervised learning
+  
+**12-13-2024** -  **12-16-2024**
+
+* [x] Created report using laTeX on overleaf adding teammate as a collaborator
+* [x] Created outline for report
+* [x] Wrote abstract, wrote introduction, Copied over/formatted literature review, wrote dataset preprocessing section, added google trends analysis to EDA, Wrote explanations for other charts in EDA, wrote unsupervised learning section

@@ -1,0 +1,55 @@
+project:
+  type: website
+  resources:
+    - audio
+  render:
+    - "*.qmd"
+    - "*.ipynb"
+    - "!xtra"
+
+website:
+  title: "DSAN5000 Project"
+  favicon: "assets/gu-logo.png"
+  sidebar:
+    tools:
+      - icon: github
+        href: https://github.com/dsan-5000/project-5000-identify-misinformation/
+    # contents: auto
+    contents:
+      - href: index.qmd
+        text: Home
+      # - href: instructions/overview.qmd
+        # text: Instructions
+      - href: about-the-authors.qmd
+        text: About the Authors
+      - text: Directory Tree
+        href: assets/tree.qmd
+      - section: Technical details
+        contents: 
+          - text: Data Collection
+            href: technical-details/data-collection/main.ipynb 
+          - text: Data Cleaning
+            href: technical-details/data-cleaning/main.ipynb 
+          - text: Exploratory Data Analysis
+            href: technical-details/eda/main.ipynb 
+          - text: Unsupervised Learning
+            href: technical-details/unsupervised-learning/main.ipynb 
+          - text: Supervised Learning
+            href: technical-details/supervised-learning/main.ipynb 
+          - text: Collaborators Progress Log
+            href: technical-details/collaborators-progress-log.qmd
+          - text: LLM Usage Log
+            href: technical-details/llm-usage-log.qmd
+      - section: Report
+        contents:
+          - text: web
+            href: report/report.qmd
+          - text: pdf
+            href: report/5000-Project-Report.pdf
+            
+format:
+  html:
+    theme: cosmo
+    bibliography:   ./assets/references.bib
+    csl:  ./assets/nature.csl
+    toc: true

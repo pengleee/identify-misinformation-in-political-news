@@ -1,0 +1,56 @@
+---
+title: "Identify Linguistic Markers of Misinformation in Political News Articles"
+subtitle: 'DSAN5000 Project, 2024 Fall'
+authors:
+    - 'Peng Li'
+    - 'Jonah Lichtenthal'
+date: '16 December 2024'
+---
+
+## Why people fall for misinformation?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hz6GULbowAk?si=ymcqdVX6Jo8jprup" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Introduction
+
+In recent years, the proliferation of misinformation (no matter intentional or not) has become a significant concern, particularly in the realm of political news. The rapid dissemination of false information can influence public opinion, disrupt democratic processes, and contribute to societal polarization. As such, identifying and mitigating misinformation is crucial for maintaining the integrity of information ecosystems.
+
+This project aims to explore the linguistic markers that distinguish misinformation from credible political news articles. By leveraging advanced natural language processing (NLP) techniques and machine learning models, we seek to uncover patterns and features that are indicative of misinformation. Our goal is to develop robust methods for detecting and analyzing misinformation, thereby contributing to the broader effort to combat the spread of false information in the digital age.
+
+## Project Summary
+
+Our project covers the ongoing crisis of fake news within our society. From politics to conspericy theories, fake news effects us everyday. We will go through a comprehensive overview of what fake news looks like in today's society and suggest a data-centric approch to solving this ongoing crisis.
+
+## Motivation
+
+> Language is the foundation of civilization. It is the glue that holds a people together. It is the first weapon drawn in a conflict.[@Louise]
+
+Language shapes our understanding of the world and influences our perceptions and actions. In the context of political news, language can be used to inform, persuade, or deceive. The strategic use of language in misinformation can manipulate public opinion and obscure the truth. By identifying linguistic markers of misinformation, we can develop tools to detect and counteract false narratives, thereby promoting a more informed and engaged citizenry. This project is motivated by the need to safeguard the integrity of political discourse and ensure that democratic processes are based on accurate and reliable information.
+
+## Research Questions
+
+- What role does sentiment polarity play in distinguishing misinformation from credible political articles?
+- How do linguistic patterns of misinformation differ across political ideologies?
+- How do linguistic markers of misinformation evolve over time in response to political events (like 2024 US Election)?
+- Can multimodal features (text + metadata) improve the detection of linguistic markers in misinformation?
+- How does the use of rhetorical devices correlate with the perceived credibility of misinformation articles?
+
+## Literature Review
+
+### Fake News Detection on Social Media: A Data Mining Perspective
+Fake News Detection on Social Media: A Data Mining Perspective is one of the most cited articles on Google Scholar about fake news detection, likely due to its extensive scope. It provides a comprehensive overview, including an exploration of what constitutes fake news, common challenges, and a detailed outline of various detection approaches. These include linguistic approaches (analyzing how the post is worded), visual approaches (detecting fake images), user-based approaches (evaluating the credibility of the poster), post-based approaches (examining how the post was received), and network-based approaches (analyzing where the post was shared). [@10.1145/3137597.3137600]
+
+### A Survey on Natural Language Processing for Fake News Detection
+A Survey on Natural Language Processing for Fake News Detection is one of the most comprehensive surveys on fake news detection using Natural Language Processing. It begins by defining fake news and related tasks such as fact-checking, rumor detection, stance detection, and sentiment analysis. The paper provides an extensive review of datasets and methods, covering classification and regression tasks for fake news detection. The approaches include SVMs, Naive Bayes, LSTMs, CNNs, and attention mechanisms. The paper also discusses dataset limitations and recommendations for future work. [@DBLP:journals/corr/abs-1811-00770]
+
+### Automatic Detection of Fake News
+Automatic Detection of Fake News is an innovative study on fake news detection, this article stands out for introducing datasets designed for detecting fake news across multiple domains. The paper  provides a comprehensive exploration of linguistic differences between fake and legitimate news, examining features such as syntax, readability, and psycholinguistics. The paper builds models using SVMs that achieve up to 78% accuracy. [@DBLP:journals/corr/abs-1708-07104]
+
+### Towards News Verification: Deception Detection Methods for News Discourse
+The researchers investigated whether **rhetorical structures and discourse features** in news text could reliably predict its veracity. Using data from NPR's "Bluff the Listener" segment, they employed **Rhetorical Structure Theory (RST)** and **Vector Space Modelling (VSM)** to analyse the discourse [@inproceedings]
+
+### Do You Speak Disinformation? Computational Detection of Deceptive News-Like Content Using Linguistic and Stylistic Features
+The authors leverage explainable machine learning, specifically tree-based models, to analyse linguistic and stylistic features distinguishing genuine from deceptive articles. A substantial, diverse dataset of manually annotated articles is used to train and test the models, addressing limitations of previous studies which often relied on smaller or biased datasets. The results reveal specific linguistic patterns—such as **headline length**, **use of exclamation marks**, and **presence of past tense verbs**—that significantly contribute to accurate disinformation detection, providing valuable insights for journalists, fact-checkers, and algorithm developers. The study ultimately aims to improve automated disinformation detection methods and enhance public understanding of the "language of fake news". [@doi:10.1080/21670811.2024.2305792]
+
+### "Liar, Liar Pants on Fire": A New Benchmark Dataset for Fake News Detection
+This paper introduces `LIAR`, a new, significantly larger dataset (12,836 manually labelled statements) for fake news detection, addressing the previous lack of sufficient labelled data for robust machine learning models. The dataset, sourced from [PolitiFact.com](https://www.politifact.com), includes rich metadata such as speaker affiliation and context, enabling more sophisticated analysis than previous, smaller datasets. The authors evaluate various machine learning models on `LIAR`, including a **novel hybrid convolutional neural network that integrates textual and metadata features**, demonstrating that **incorporating metadata improves fake news detection accuracy**. The paper's purpose is to provide a valuable resource for the research community and showcase the benefits of using this enhanced dataset for improving fake news detection algorithms. [@wang2017liarliarpantsfire]

@@ -1,0 +1,74 @@
+# Final Report
+
+**Audio instructions:** 
+
+If you want, you can listen to the instructions:
+
+<audio controls><source src="../audio/report-page.mp3" type="audio/mpeg"></audio>
+
+<sup> **Source**: Text-to-speech conversion done with Amazon Polly on AWS </sup>
+
+`Note`: These audio instructions should not be included in your final submission or repository, once you are done wiht them, please delete the files and remove them from the website. 
+
+
+This report is designed for a **non-technical audience** (e.g., the general public, executives, marketing teams, or clients), focusing on **high-level insights**, **actionable results**, and **visualizations** to convey the impact without requiring technical knowledge. The goal is to highlight how a model affects business strategy or revenue without diving into complex methods.
+
+## Guidelines for Creating a Good Narrative
+
+- **Clear Purpose**: Define the core message or objective early on.
+- **Know Your Audience**: Adjust language, tone, and detail based on the audience’s understanding.
+- **Strong Opening**: Start with a hook that sets context and stakes.
+- **Logical Flow**: Structure with a clear beginning, middle, and end.
+- **Key Insights**: Highlight the most important points; avoid unnecessary details or jargon.
+- **Data Support**: Use data to enhance the narrative without overwhelming.
+- **Visuals**: Incorporate charts to simplify ideas and engage the audience.
+- **Actionable Takeaways**: Conclude with recommendations or next steps.
+- **Authenticity**: Use storytelling to make the content engaging and relatable.
+- **Revise**: Edit for clarity and impact, removing unnecessary content.
+  
+## Report Content
+
+These are just examples, you can use any structure that is suitable for your project.
+
+### Case-1: Academic-Oriented Projects
+
+- **Introduction**: Provide an accessible overview and explain the motivation and importance of the research.
+   *Example*: "This study explores how climate change affects local ecosystems, vital for wildlife conservation."
+- **Objective**: Clearly define the research goal and relate it to real-world challenges.
+   *Example*: "We aim to analyze the effects of air pollution on public health in urban areas."
+- **Key Findings**: Present insights without technical terms, focusing on the impact.
+   *Example*: "Air pollution increases the risk of respiratory diseases by 20%."
+- **Methodology Overview**: Briefly explain relevant methods.
+   *Example*: "We analyzed air quality data from 50 cities and surveyed 10,000 residents."
+- **Visualizations**: Use simple graphs and infographics to convey findings.
+   *Example*: A map showing pollution levels and a bar chart of health risks.
+- **Societal Implications**: Highlight the broader impact.
+   *Example*: "This study highlights the need for better air quality policies."
+- **Call to Action**: Offer recommendations based on findings.
+   *Example*: "We recommend city planners invest in green spaces."
+- **Conclusion**: Recap the main findings and societal impact.
+   *Example*: "Understanding pollution's health impacts will help create healthier cities."
+
+### Case-2: Business-Oriented Projects
+
+- **Executive Summary**: Summarize key findings and their relevance to business goals.
+   *Example*: "This report predicts customer churn and offers strategies to reduce churn by 15%."
+- **Objective**: Define the problem or question addressed.
+   *Example*: "This project aims to identify the drivers of customer churn."
+- **Key Insights**: Present the most important, actionable insights.
+   *Example*: "Customers who interact with support twice within 30 days are 25% less likely to churn."
+- **Visualizations**: Use clear graphs to convey key insights.
+   *Example*: A bar chart showing churn likelihood based on engagement.
+- **Business Implications**: Explain how findings impact business outcomes and offer specific recommendations.
+   *Example*: "Focus retention efforts on low-engagement customers."
+- **Recommendations**: Provide clear, actionable steps with projections.
+   *Example*: "Implement an automated retention campaign, reducing churn by 10%."
+- **Conclusion**: Summarize findings and suggest next steps.
+   *Example*: "Addressing churn drivers can reduce loss and improve profitability."
+- **Appendix** (Optional): Additional charts or explanations for further insights.
+
+## Final Tips
+
+- **Simplicity**: Avoid jargon; focus on business-relevant insights.
+- **Visual Focus**: Prioritize charts and graphs over dense text.
+- **Emphasize Impact**: Always link data insights to business outcomes.

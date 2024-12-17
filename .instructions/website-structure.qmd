@@ -1,0 +1,125 @@
+# Website project structure 
+
+Please at miniumum include the following pages in your website:
+
+- Landing page
+- Report
+- Technical details
+  - Data collection
+  - Data cleaning
+  - EDA
+  - Unsupervised-learning
+  - Supervised-learning
+  - LLM-usage
+  - Progress-log 
+
+Please adhere closely to this structure, for consistency accross projects.
+
+Sub-sections can be handles as markdown headers in the respective pages. 
+
+You can add more pages,and if you want, you can merge EDA and unsupervised learning into one page, since the are similar. Or make these section headers in the dropdown menu, for further sub-sections creation.
+
+For example: 
+
+- Landing page
+- Report
+- Technical details
+  - Data collection
+  - Data cleaning
+  - EDA
+  - Unsupervised-learning
+    - Clustering
+    - Dimensionality Reduction
+  - Supervised-learning
+    - Feature selection
+      - regression
+      - classification
+    - Classification
+      - Binary classification
+      - Multi-class classification
+    - Regression
+  - LLM-usage
+  - Progress-log 
+
+`Important`: Exactly what you put on these pages will be specific you your project and data. Some things might "make more sense" on one page rather than another, depending on your workflow. Organize your project in a logical way that makes the most sense to you.  
+
+A skeleton of the recommended version of the website is provided in the github classroom repository.
+
+```
+./
+├── README.md
+├── _quarto.yml
+├── assets
+│   ├── gu-logo.png
+│   ├── nature.csl
+│   └── references.bib
+├── build.sh
+├── data
+│   ├── processed-data
+│   │   └── countries_population.csv
+│   └── raw-data
+│       └── countries_population.csv
+├── index.qmd
+├── instructions
+│   ├── expectations.qmd
+│   ├── github-usage.qmd
+│   ├── llm-usage.qmd
+│   ├── overview.qmd
+│   ├── quarto-tips.qmd
+│   ├── topic-selection.qmd
+│   └── website-structure.qmd
+├── report
+│   └── report.qmd
+└── technical-details
+    ├── data-cleaning
+    │   ├── instructions.qmd
+    │   └── main.ipynb
+    ├── data-collection
+    │   ├── closing.qmd
+    │   ├── instructions.qmd
+    │   ├── main.ipynb
+    │   ├── methods.qmd
+    │   └── overview.qmd
+    ├── eda
+    │   ├── instructions.qmd
+    │   └── main.ipynb
+    ├── llm-usage-log.qmd
+    ├── progress-log.qmd
+    ├── supervised-learning
+    │   ├── instructions.qmd
+    │   └── main.ipynb
+    └── unsupervised-learning
+        ├── instructions.qmd
+        └── main.ipynb
+```
+
+Always strive to incorporate the following:
+
+- **Structure**: Use clear headings and subheadings to break down each section of your EDA.
+- **Clarity**: Provide concise explanations for all tables and visualizations, ensuring they are easy to interpret.
+- **Code Links**: Link to relevant code (e.g., GitHub) or embed code snippets for transparency and reproducibility.
+- **Reproducibility**: Make your EDA reproducible by providing access to the dataset, scripts, and tools you used.
+- **Visualization**: Use visualizations to convey key insights 
+
+## Website Development
+
+It is required that you build your website with [Quarto](https://quarto.org/).  
+
+## Website Hosting
+
+You **MUST** host your website on the **Georgetown Domains** web space.
+
+**No exceptions.** You may **NOT** use anything other than Georgetown Domains to host your website. For example, no RPubs, WordPress, Squarespace, or any other website development toolset. **Failure to comply with this rule will result in a ZERO.**
+
+## The two audiences
+
+Knowing your audience in data science writing is crucial because it shapes how you present information. Technical stakeholders may require detailed explanations of methodologies, while non-technical audiences need clear, simplified insights and data-driven conclusions. Tailoring your message ensures your analysis is both understandable and impactful, driving informed decision-making.
+
+* Examples of **technical audiences** include data scientists, software engineers, and IT professionals. These individuals expect detailed explanations of models, algorithms, methodologies, or system architectures, and they’re comfortable with technical jargon, such as discussing hyperparameters, programming frameworks, or machine learning techniques.
+
+* **Non-technical audiences** include executives, marketing teams, and clients. They prioritize high-level insights, actionable results, and visualizations that convey the impact of data without requiring an understanding of complex methods. For instance, a CEO may want to know how a model affects business strategy or revenue, without diving into the underlying technical details.
+
+**In this project you will cater to both audiences**. This is done by having regions of your website for both audiences (see website struture)
+
+
+

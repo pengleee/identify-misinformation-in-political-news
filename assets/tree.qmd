@@ -1,0 +1,112 @@
+```{bash}
+.
+├── README.md
+├── _quarto.yml
+├── about-the-authors.qmd
+├── assets
+│   ├── 5000-EDA
+│   │   ├── cd-wordcloud.png
+│   │   ├── liar-wordcloud.png
+│   │   ├── mc-title-length.png
+│   │   ├── news-length.png
+│   │   ├── news-source.png
+│   │   └── news-wordcloud.png
+│   ├── 5000-images
+│   │   ├── 5000 Project Report Crosstable 2.JPG
+│   │   ├── Common Words.png
+│   │   ├── Fake News Google Trends.JPG
+│   │   ├── Ratios.JPG
+│   │   └── t-SNE Visualization.png
+│   ├── 5000-supervised-learning
+│   │   ├── adj-pos.png
+│   │   ├── distilbert-sentiment.png
+│   │   ├── top-linguistic-markers.png
+│   │   └── vader-sentiment.png
+│   ├── gu-logo.png
+│   ├── index.qmd
+│   ├── jl-image.jpg
+│   ├── nature.csl
+│   ├── pl-image.jpg
+│   ├── references.bib
+│   └── tree.qmd
+├── build.sh
+├── build_and_deploy.sh
+├── data
+│   ├── Clean_Data
+│   │   ├── default-data
+│   │   │   └── countries_population.csv
+│   │   ├── liar_dataset
+│   │   │   ├── test.csv
+│   │   │   ├── train.csv
+│   │   │   └── valid.csv
+│   │   ├── mediacloud_api_data
+│   │   │   ├── covid-story-list.csv
+│   │   │   └── politics-storylist-20231129_20231130.csv
+│   │   └── news_api_data
+│   │       └── news_api_data.csv
+│   └── Raw_Data
+│       ├── allthenews_data_kaggle.ipynb
+│       ├── default-data
+│       │   └── countries_population.csv
+│       ├── liar_dataset
+│       │   ├── README.txt
+│       │   ├── test.tsv
+│       │   ├── train.tsv
+│       │   └── valid.tsv
+│       ├── mediacloud_api.ipynb
+│       ├── mediacloud_api_data
+│       │   ├── covid-story-list.csv
+│       │   └── politics-storylist-20231129_20231130.csv
+│       ├── news_api.ipynb
+│       ├── news_api_data
+│       │   └── politics_20241124_214935.json
+│       └── x_api.ipynb
+├── deploy.sh
+├── index.qmd
+├── report
+│   ├── 5000-project-report.pdf
+│   └── report.qmd
+├── requirements.txt
+└── technical-details
+    ├── collaborators-progress-log.qmd
+    ├── data-cleaning
+    │   ├── instructions.qmd
+    │   └── main.ipynb
+    ├── data-collection
+    │   ├── closing.qmd
+    │   ├── instructions.qmd
+    │   ├── main.ipynb
+    │   ├── main_files
+    │   │   └── libs
+    │   │       ├── bootstrap
+    │   │       │   ├── bootstrap-973236bd072d72a04ee9cd82dcc9cb29.min.css
+    │   │       │   ├── bootstrap-icons.css
+    │   │       │   ├── bootstrap-icons.woff
+    │   │       │   └── bootstrap.min.js
+    │   │       ├── clipboard
+    │   │       │   └── clipboard.min.js
+    │   │       └── quarto-html
+    │   │           ├── anchor.min.js
+    │   │           ├── popper.min.js
+    │   │           ├── quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css
+    │   │           ├── quarto.js
+    │   │           ├── tippy.css
+    │   │           └── tippy.umd.min.js
+    │   ├── mediacloud_api.qmd
+    │   ├── methods.qmd
+    │   ├── news_api.qmd
+    │   └── overview.qmd
+    ├── eda
+    │   ├── instructions.qmd
+    │   └── main.ipynb
+    ├── llm-usage-log.qmd
+    ├── supervised-learning
+    │   ├── instructions.qmd
+    │   ├── main.ipynb
+    │   └── su_processed_liar_data.csv
+    └── unsupervised-learning
+        ├── instructions.qmd
+        └── main.ipynb
+
+28 directories, 80 files
+```

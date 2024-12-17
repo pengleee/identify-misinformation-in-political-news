@@ -1,0 +1,6 @@
+/.quarto/
+.DS_Store
+allthenews_dataset/
+.venv/
+.env/
+xtra/

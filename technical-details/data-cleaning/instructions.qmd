@@ -1,0 +1,87 @@
+# Instructions 
+
+
+### Introduction and Motivation
+
+Briefly outline your plan. What are you doing on this page, and why? Provide context and explain the goals of your analysis.
+
+### Overview of Methods
+
+Give a concise explanation of the methods used. For example, if using K-Means clustering, describe what it is, how it works, the inputs and outputs, and key hyperparameters
+
+### Code
+
+Include the code you used to implement your workflow.
+
+### Summary and Interpretation of Results
+
+Summarize your findings, interpret the results, and discuss their technical implications.
+
+
+
+
+
+
+
+
+
+
+## General comments:
+
+- **Iterative Process**: Data cleaning is often not a one-time process. As your analysis progresses, you may need to revisit the cleaning phase, and re-run the code, to adjust to new insights or requirements.
+- **Clarity and Reproducibility**: Ensure your documentation is clear and thorough. Others should be able to follow your steps and achieve the same results.
+- **Visualizations**: Use before-and-after visualizations to illustrate the impact of your cleaning steps, making the process more intuitive and transparent.
+
+By the end of this phase, your cleaned data should be well-documented and ready for further stages, such as **Exploratory Data Analysis (EDA)** and **Machine Learning**.
+
+## What to address 
+
+The following is a list of some of the things you should address on this page. This list is not exhaustive, and you should use your judgment to decide what is most relevant to your project.
+
+The **Data Cleaning** page of your portfolio is where you document the process of transforming your raw data into a usable format. Data cleaning is essential for ensuring the quality of your analysis, and this page should serve as a clear and reproducible guide for anyone reviewing your work. It also provides transparency, allowing others to trace the steps you took to prepare your data.
+
+The following is a guide to help you get started with possible thing to address on this page .
+
+- **Description of the Data Cleaning Process**: Explain the steps you took to clean and preprocess the data.
+- **Code Documentation**: Provide the code used in the data cleaning process (link to GitHub or embed the code directly).
+- **Provide examples of data before and after cleaning**: e.g. with df.head() or df.describe()
+- **Raw and Cleaned Data Links**: Ensure your page links to both the original (raw) dataset and the cleaned dataset. (please keep organized and store the cleaned data in `data/processed-data`, or similar location which doesn't get synced to GitHub)
+
+Possible things to include:
+
+**Introduction to Data Cleaning**:
+
+- Provide a brief explanation of the data cleaning phase, its importance in preparing the data for further analysis (EDA, modeling), and its iterative nature.
+- Mention that data cleaning may need to be revisited as the project evolves and analysis goals change.
+
+**Managing Missing Data**:
+
+- **Identify Missing Values**: Explain how you identified missing data and where it occurred.
+- **Handling Missing Data**: Describe how missing values were addressed (e.g., imputation, removal of rows/columns).
+- **Visualize Missing Data**: Include visualizations (e.g., heatmaps) showing missing values before and after handling them.
+
+**Outlier Detection and Treatment**:
+
+- **Identify Outliers**: Describe the methods you used to detect outliers in the dataset.
+- **Addressing Outliers**: Explain how outliers were treated (e.g., removal, transformation, or retaining them for analysis).
+- **Visualize Outliers**: Use visualizations (e.g., box plots) to show how outliers were managed.
+
+
+**Data Type Correction and Formatting**:
+
+- **Review Data Types**: Summarize the types of variables (numerical, categorical, date-time, etc.) and ensure they are correctly formatted.
+- **Transformation**: Document any transformations performed, such as converting date formats, handling categorical variables, or encoding labels.
+- **Impact of Changes**: Briefly explain why these changes were necessary for accurate analysis.
+
+**Normalization and Scaling**:
+
+- **Data Distribution Analysis**: Check and discuss the distribution of numerical variables (e.g., skewness).
+- **Normalization Techniques**: Describe any normalization or scaling techniques used (e.g., min-max scaling, z-score normalization).
+- **Before-and-After Visualizations**: Provide visualizations comparing the data before and after scaling or normalization.
+
+**Subsetting the Data**:
+
+- **Data Filtering**: Explain any subsetting or filtering of the data (e.g., selecting quantitative or qualitative columns).
+- **Rationale**: Justify why you chose to work with a particular subset of the data.
+
+

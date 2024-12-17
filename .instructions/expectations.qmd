@@ -1,0 +1,146 @@
+# General Tips and Expectations
+
+
+## Get started early 
+
+Remember, `slow and steady wins the race`
+
+Making steady, incremental progress on a large project generally makes it more manageable. Rushing to throw something together under a tight deadline often turns the process into a nightmare.
+
+
+## Graduate level work
+
+This is a graduate-level class, so each project should be viewed as **specifications**, not simple step-by-step requirements. Graduate-level work must be creative, individualized, and of high quality. To achieve an A-level grade, you are expected to **exceed** the specifications and **create unique, novel solutions**.
+
+**For example**: If you're asked to build visualizations to support your data science story, you won’t be told how many or what type of visualizations to create. This is up to you, based on your data and the creativity and quality you want to demonstrate.
+
+We want you to move away from expecting someone else to tell you what to do, how to do it, and how much to do. Instead, you'll adopt a professional approach—reviewing specifications provided in the assignments, determining what's needed to **exceed expectations**, and demonstrating professional excellence.
+
+There are countless ways to approach the project requirements, so be creative and thoughtful. Instructions outline the **minimum** requirements, but exceeding them will elevate the quality of your work.
+
+**Autonomy and Critical Thinking**:
+
+- In the workplace, step-by-step instructions are rare. You’ll need to interpret broad requirements and deliver professional results. Producing high-quality, accurate work with limited guidance is a key professional skill.
+- At this stage, move away from asking, "Do I have to do XYZ?" Instead, critically analyze challenges. If something is unclear, investigate and break it down fundamentally.
+
+Developing problem-solving skills is crucial. While it’s important to work independently for at least 10–20 minutes, if you're still stuck after 30 minutes, seek help. Being resourceful is important, but knowing when to ask for assistance is equally valuable.
+
+
+## The intersection of skills and domain knowledge
+
+"Data science" is essentially a collection of useful computational and mathematical skills (statistics, cloud computing, machine learning, coding, etc). However, to maximize your effectiveness, these skills should be applied to a domain of interest (e.g., materials science, finance, healthcare, etc). Focusing and learning about a particular domain will help you specialize and make you more marketable. 
+
+That beind said, don't worry about choosing the "perfect" domain—it's always possible to pivot later, as many of the skills learned, such as problem-solving, critical thinking, and self-education, are transferable across all fields.
+
+## What is "impact"? 
+ 
+Impact in science refers to the significance and influence of research, often measured by metrics like citations, impact factor of journals, and indices like h-index. These metrics reflect how widely recognized and valuable the work is within the scientific community. Such quanities are used to compare researchers and journals, and are used to determine grant funding and career opportunities. 
+
+- **Impact Factor (IF)**: 
+  - A measure of a journal's influence, calculated by averaging the number of citations to articles published in the journal over the past two years.
+  - Higher impact factors indicate a more influential journal.
+- **Number of Citations**:
+  - The total count of how often a researcher's work is cited by others, reflecting its influence within the scientific community.
+  - More citations generally signal broader recognition or relevance of the research.
+- **h-index**:
+  - A metric that measures both productivity and citation impact. An h-index of 10 means a researcher has 10 papers each cited at least 10 times.
+  - Higher h-index indicates more influential and widely recognized work.
+- **i10-index**:
+  - Counts the number of a researcher's publications with at least 10 citations.
+  - A straightforward measure of citation impact, commonly used by Google Scholar.
+- **Importance of Citations**:
+  - Citations indicate that other researchers find the work valuable for their own research, increasing its perceived credibility and impact in the field.
+
+
+## What makes a good research project? 
+
+Professional academic or industrial research is all about **discovery, improvement, and novelty**. You don't necessarily need to have a project that acheive the following, but here are some guidelines for what makes "high impact" projects:
+
+In no particular order: 
+
+- **Novel computational tools**: For example, development of a new Python package to tackle a class of problem which doesn't have an existing suitable tool.
+- **Creating more user-friendly tools**: For example, there might be a great C++ code, but with no python analogue. Python is easier to use, so if you make a pythonic version of an existing tool, it may get higher adoption, provided it is more or less as efficient to the competitors. 
+- **More efficient tools or methods**: Achieving something 1.25x, 2x, 10x or 10000x faster than existing methods, or creating a new code package that is more efficient than a previous one.
+- **Novel methods**: A completely new way of doing something (e.g. new classification algorithm)
+- **Existing methods applied to new domains**: Using established methods to solve problems in a novel domain, e.g. applying a particular classification methodology to a problem or dataset that no one has applied it to before. Extent of impact obviously depends on the importance of the domain or use-case.
+- **Creation of novel Data Sets**: Provides well-curated, clean datasets that can be used to address important scientific questions or problems.(often more useful if there is an accompanying API)
+- **New insights or phenomena**: Using data analysis techniques to uncover new insights or patterns that address key questions or problems. For example, discovering overarching governing rules (e.g., differential equations) that describe some observed phenomena.   
+- **Solves a Major Problem**: Addresses a critical or unresolved issue in the field, offering a breakthrough or significant advancement.  
+- **Robust Data and Methodology**: Employs sound, validated methodologies and high-quality data to ensure credibility and reliability (i.e. doing something rigorously, correctly, and generally better than the competition).
+- **Interdisciplinary Impact**: Influences multiple fields or areas of study, increasing the breadth of its significance.
+- **High Citation Potential**: Likely to be widely cited due to its significance, relevance, and applicability across different areas. 
+
+You can, of course, have multiple of these components in a single project, which will increase its prestige. 
+
+This is especially true when conducting academic research. Publications need to be novel and make a unique contribution to the body of human knowledge; otherwise, they will not be highly cited or considered particularly important.
+
+## Time management
+
+**80-20 Rule**: This rule of thumb suggests that 80% of results come from 20% of causes. In other words, a small number of key factors drive the majority of outcomes. This principle applies to project management, where a few critical steps or decisions often determine the success of a project.
+
+For example, it might take one week of steady work (30-40 hours) to complete 80% of a project, while the final 20% could take an additional four weeks.
+
+> Projects tend to expand to fill the time available. No creative project—whether a book, song, poem, or paper—is ever truly 100% complete. There is an asymptotic limit as $t \rightarrow \infty$, and true perfection is unattainable. The key is knowing when to "call it done." This might happen at 95% or 99% completion, but eventually, we all have to stop. Strive to take this project as far as possible, but remember to stop and "call it done" at some point.
+
+## Visualization guidelines
+
+Visualizations are a critical component of your portfolio. Use them strategically to support your narrative. The more visual representations of your data, the better—higher-quality visualizations will result in a higher grade. Ensure that all graphics follow best practices:
+
+- **Choose the right chart type**: Match the chart to the data (e.g., bar for categories, line for trends).
+- **Maintain simplicity**: Avoid clutter and focus on the essential message.
+- **Use appropriate scales**: Ensure axes have correct and intuitive scaling to avoid misinterpretation.
+- **Label axes clearly**: Include meaningful axis labels with units (e.g., "Temperature (°C)" or "Revenue (USD)").
+- **Include descriptive titles**: Provide a concise, informative title that explains the visualization's main takeaway.
+- **Ensure consistency**: Use uniform color schemes, fonts, and styles across all charts in a presentation.
+- **Highlight key data**: Use contrasting colors or annotations to draw attention to important points or trends.
+- **Keep proportions accurate**: Maintain correct data-to-visual size relationships to avoid distortion.
+- **Consider the audience**: Tailor the level of detail and style to the audience’s technical proficiency.
+- **Test readability**: Ensure fonts, colors, and elements are clear and legible in various formats and sizes.
+- **Use interactivity carefully**: Interactive features should add clarity, not complexity, to the visual.
+
+
+## Coding
+
+### Practice First
+
+While not required, practice is highly beneficial. It’s also a good habit to write your code from scratch, as this will build your problem-solving skills. You can use the code provided by professors as a reference, but always strive to write your own. Starting with a blank page is a valuable practice.
+
+To get comfortable with the methods, review and modify the R and Python codes provided in class. Try applying these to your project data and experiment with creating small toy datasets, such as a CSV file or a text corpus. This helps you understand the structure of the data and what the algorithms are doing.
+
+### Prototype and develop on a small data set
+
+If you have big data, ALWAYS prototype on a small subset of the data, so that your code runs fast so that you can develop quickly, without waiting several minutes for each code cell to run. Do this by including a downsampling hyper-parameter at the beginning of your code, e.g. 0.1. When the code is robust and finalized, you can set the downsampling factor to 1, run it on the complete data set, and let your computer run overnight. 
+
+It is not a crazy idea to do a "trial run" of the project first from start to finish with a very basic dataset, e.g. penguins,diabetes, or iris. Make sure the "toy" data set is similar to your planned real world data set, for example, if you are planning an NLP project, don't use a image dataset for your development process. 
+
+This will have the following benefits:
+
+1. **Clarifies Workflow**: Understand the complete process from start to finish.
+2. **Identifies Challenges**: Spot potential issues early on.
+3. **Validates Assumptions**: Ensure methods and approaches are suitable.
+4. **Enhances Skills**: Improve technical skills through practice.
+5. **Builds Confidence**: Familiarity with tools and techniques.
+6. **Refines Methods**: Test and optimize analytical strategies.
+7. **Estimates Resources**: Better planning for time and resource allocation.
+8. **Facilitates Communication**: Clearly convey project goals and outcomes.
+9. **Documents Process**: Create a reference for reproducibility.
+10. **Gathers Early Feedback**: Obtain input for adjustments before full implementation.
+
+[https://scikit-learn.org/1.5/datasets/toy_dataset.html](https://scikit-learn.org/1.5/datasets/toy_dataset.html)
+
+Once that is working as a starter `code-base` you can swap it out for your full data later and start developing further for a more realistic real world project . 
+
+## Debugging 
+
+- Always remember the following **Debugging Steps:**
+
+   - **Step A:** Copy the error message and search it online (Google or similar).
+   - **Step B:** Look through forums or documentation to find a solution.
+   - **Step C:** Implement the solution.
+   - **Step D:** If you're still stuck, ask for help from classmates, TAs, or professors.
+   - **Step E:** Move on to the next issue and repeat the process.
+  
+*(Note: You can also use ChatGPT for debugging, but be cautious as the solutions may sometimes be inaccurate or incomplete.)*
+
+
+

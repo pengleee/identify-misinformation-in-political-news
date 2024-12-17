@@ -1,0 +1,57 @@
+# Instructions 
+
+`Note`: You should remove these instruction once you have read and understood them. They should not be included in your final submission.
+
+`Remember:` Exactly what do you put on this page will be specific you your project and data. Some things might "make more sense" on one page rather than another, depending on your workflow. Organize your project in a logical way that makes the most sense to you.  
+
+## Suggested page structure
+
+Here’s one suggested structure for organizing your technical pages. You can adjust this as needed:
+
+`Audience`:Remember that these are written for a technical audience. Assume they have completed the DSAN program, but would appreciate refreshers of the important concepts. 
+
+- **Introduction and Motivation:** Briefly outline your plan. What are you doing on this page, and why? Provide context and explain the goals of your analysis.
+- **Overview of Methods:** Give a concise explanation of the methods used. For example, if using K-Means clustering, describe what it is, how it works, the inputs and outputs, and key hyperparameters.
+- **Code:** Include the code you used to implement your workflow.
+- **Summary and Interpretation of Results:** Summarize your findings, interpret the results, and discuss their technical implications.
+
+## What to address 
+
+The following is a list of some of the things you should address on this page. This list is not exhaustive, and you should use your judgment to decide what is most relevant to your project.
+
+Please do some form of "Feature selection" in your project and include a section on it. Discuss the process you went through to select the features that you used in your model, this should be done for both classification models and regression models. What did you include and why? What did you exclude? What was the reasoning behind your decisions? This section can be included here, or you can make a new page in the dropdown menu for it.
+
+Please break this page into a "regression" section, "binary classification" section, and a "Multi-class classification" section. For each case you should try multiple methods, including those discussed in class, and compare and contrast their preformance and results. 
+
+## Data Preprocessing
+
+1. **Normalization or Standardization**: Apply techniques to scale the data appropriately.
+2. **Feature Selection or Extraction**: Identify and select the most relevant features for your analysis.
+3. **Encoding Categorical Variables**: Convert categorical variables into a suitable format for modeling.
+
+## Model Selection
+
+1. **Model Rationale**: Explain the reasons for selecting specific models or algorithms.
+2. **Overview of Algorithms**: Provide a brief overview of the algorithms used 
+
+## Training and Testing Strategy
+
+1. **Split Methods**: Detail the splitting methods used (e.g., train-test split, cross-validation).
+2. **Dataset Proportions**: Specify the proportions used for splitting the dataset.
+
+## Model Evaluation Metrics
+
+1. **Binary Classification Metrics**: Discuss metrics such as accuracy, precision, recall, F1 score, and ROC-AUC.
+2. **Multiclass Classification Metrics**: Include metrics such as confusion matrix and macro/micro F1 score.
+3. **Regression Metrics**: Explain metrics such as RMSE, MAE, and R-squared, parity plots, etc.
+
+## Results
+
+1. **Model Performance Summary**: Provide a summary of the model's performance.
+2. **Visualizations**: Include visualizations of results (e.g., ROC curves, feature importance plots).
+
+## Discussion
+
+1. **Result Interpretation**: Interpret the results obtained from the analysis.
+2. **Model Performance Comparison**: Compare the performance of different models.
+3. **Insights Gained**: Share insights learned from the analysis.

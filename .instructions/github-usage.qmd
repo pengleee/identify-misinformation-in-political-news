@@ -1,0 +1,72 @@
+# GitHub
+
+Your project will be fully transparent, with all source code hosted on GitHub. This platform will serve as the main repository for your project code, documentation, and website. Proper organization and regular updates are key for effective collaboration and project management.
+
+> **IMPORTANT**: Proficiency in GitHub for collaboration is a valuable addition to your resume. Being able to join a team and immediately contribute by solving problems and adding value is a highly sought-after skill. Now is the time to develop this expertise—embrace Git fully, become proficient, and graduate with a critical skill for your future career.
+
+## Repository Setup
+
+- You **MUST** use GitHub Classroom to create your project repository. This ensures TAs can access your code and track your progress.
+- Clone the repository to your local machine, which will provide a basic directory structure.
+
+## Expectations for GitHub Usage
+
+Your grade will reflect how effectively you use Git, including:
+
+- Incremental progress on the project
+- The frequency and quality of commits
+- Repository structure and organization
+- Adherence to GitHub guidelines outlined below
+
+Ensure regular commits to GitHub (e.g., `git add`, `git commit`, `git push`) to sync your work and maintain a smooth development process.
+
+### 1. Use a Logical Repository Structure
+
+- Include a comprehensive README file that explains the purpose of the project.
+- Organize files logically to make navigation easier for collaborators and TAs.
+- Ensure all files are well-documented and the code is easy to follow.
+
+### 2. Commit Regularly
+
+- Commit frequently with clear, meaningful commit messages that reflect the changes made.
+  - **Good commit message example:** `Added data cleaning script for tabular data`
+  - **Poor commit message example:** `Fix`
+
+### 3. Data Storage
+
+- Do **not** store large data files in your repository.  
+  - Store raw data in the `raw-data` folder and processed data in the `processed-data` folder; these folders should be added to `.gitignore`.
+  - **Tip:** Use external storage like Google Drive or GU Domains for large datasets and provide access links within the repository.
+
+### 4. Syncing with GU Domains
+
+- Sync your GitHub repository with your GU Domains website before submission deadlines to keep everything up to date. (this should be fully automated)
+- Ensure your code repository and website are always in sync, particularly before the final submission, to avoid losing points.
+
+### 5. Code Documentation
+
+- Provide clear and thorough documentation for each file and function in your project.
+- Include a `README.md` that outlines the project purpose, how to run the code, and any necessary dependencies.
+
+## Collaboration in Groups (If Applicable)
+
+If you are working in a group, make full use of GitHub’s collaboration features:
+
+1. **Task Assignment:**  
+   - Assign tasks using GitHub Issues or Project Boards to keep track of progress.
+
+2. **Branching and Pull Requests:**  
+   - Use branches for feature development and pull requests for code reviews before merging into the main branch.
+
+3. **Communication:**  
+   - Maintain regular communication and conduct code reviews with your teammates to prevent conflicts.
+
+4. **Equal Contribution:**  
+   - Ensure equal contribution from all team members. Unequal contributions will negatively affect individual grades. 
+   - **Note:** Team members not contributing equally may be flagged by the group and penalized after review.
+
+5. **Contribution Documentation:**  
+   - Document each member’s contributions clearly in the `collaborators.qmd` file, detailing who worked on specific aspects of the project.
+
+6. **Code Reviews:**  
+   - Conduct peer code reviews before merging changes into the main branch to maintain quality and consistency.

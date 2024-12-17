@@ -1,0 +1,39 @@
+# About the Authors
+
+## Peng Li
+
+<img src="assets/pl-image.jpg" alt="Peng Li Image" width="300">
+
+**Introduction**
+
+Peng Li comes from Shaoxing, Zhejiang, China. He received his B.S. in Data Science and Big Data Technology from the Chinese University of Hong Kong, Shenzhen (CUHK-SZ) in 2024. He also studied at University of California, Irvine (UCI) and University of Bristol, England as visiting students.
+
+**Education**
+
+- 2024-2026 (Expected): M.S., Data Science and Analytics, Georgetown University
+- 2020-2024: B.S., Data Science and Big Data Technology, The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)
+
+**Research Interests**: NLP, Computational Linguistics
+
+**Hobbies**: Gaming, reading, writing and photographing
+
+**Email**: [pl800@georgetown.edu](mailto:pl800@georgetown.edu)
+
+## Jonah Lichtenthal
+
+<img src="assets/jl-image.jpg" alt="Jonah Lichtenthal Image" width="300">
+
+**Introduction**
+
+Jonah Lichtenthal comes from Millwood, NY, USA. He received his B.S. in Business Analytics from University of Rochester in 2024.
+
+**Education**
+
+- 2024-2026 (Expected): M.S., Data Science and Analytics, Georgetown University
+- 2020-2024: B.S., Business Analytics, University of Rochester
+
+**Research Interests**: NLP, Deep Learning, LLMs
+
+**Hobbies**: Gaming, Esports, Swimming, Table Tennis
+
+**Email**: [jgl72@georgetown.edu](mailto:jgl72@georgetown.edu)

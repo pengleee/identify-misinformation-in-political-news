@@ -1,0 +1,27 @@
+---
+title: "LLM usage log"
+---
+
+LLM tools were used in the following way for the tasks below
+
+## Brainstorming
+
+* To create the initial idea, LLM tools were used to brainstorm ideas and provide feedback and refine the project plan: Identify Linguistic Markers of Misinformation in Political News Articles
+* Creating a general proposal about how to complete the project
+
+## Literature Review
+
+* Helping to list some relavant papers about fake news detection
+* Recommending available datasets
+* Text summarization for literature review 
+
+## Coding: 
+
+* Code commenting and explanatory documentation
+* Debugging
+* Explaining some code statements
+
+## Writing: 
+
+* Reformating text from bulleted lists into proses 
+* Proofreading the report

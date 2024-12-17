@@ -1,0 +1,61 @@
+# Instructions 
+
+`Note`: You should remove these instructions once you have read and understood them. They should not be included in your final submission.
+
+`Remember:` Exactly what do you put on this page will be specific you your project and data. Some things might "make more sense" on one page rather than another, depending on your workflow. Organize your project in a logical way that makes the most sense to you.  
+
+## Suggested page structure
+
+Here’s one suggested structure for organizing your technical pages. You can adjust this as needed:
+
+`Audience`:Remember that these are written for a technical audience. Assume they have completed the DSAN program, but would appreciate refreshers of the important concepts. 
+
+- **Introduction and Motivation:** Briefly outline your plan. What are you doing on this page, and why? Provide context and explain the goals of your analysis.
+- **Overview of Methods:** Give a concise explanation of the methods used. For example, if using K-Means clustering, describe what it is, how it works, the inputs and outputs, and key hyperparameters.
+- **Code:** Include the code you used to implement your workflow.
+- **Summary and Interpretation of Results:** Summarize your findings, interpret the results, and discuss their technical implications.
+
+## What to address 
+
+The following is a list of some of the things you should address on this page. This list is not exhaustive, and you should use your judgment to decide what is most relevant to your project.
+
+This page is designed to give you hands-on experience with key unsupervised learning techniques, including clustering methods and dimensionality reduction, applied to real-world datasets. Please apply algorithms such as K-Means, DBSCAN, Hierarchical clustering, PCA, and t-SNE to your data. Through this process, you’ll deepen your understanding of how unsupervised learning can reveal hidden patterns and structure in data.
+
+### Part 1: Dimensionality Reduction
+
+The objective of this section is to explore and demonstrate the effectiveness of PCA and t-SNE in reducing the dimensionality of complex data while preserving essential information and improving visualization.
+
+1. **PCA (Principal Component Analysis):**
+   - Apply PCA to your dataset.
+   - Determine the optimal number of principal components.
+   - Visualize the reduced-dimensional data.
+   - Analyze and interpret the results.
+
+2. **t-SNE (t-distributed Stochastic Neighbor Embedding):**
+   - Implement t-SNE on the same dataset.
+   - Experiment with different perplexity values.
+   - Visualize the t-SNE output to reveal patterns and clusters.
+   - Compare the results of t-SNE with those from PCA.
+
+3. **Evaluation and Comparison:**
+   - Evaluate the effectiveness of PCA and t-SNE in preserving data structure.
+   - Compare the visualization capabilities of both techniques.
+   - Discuss the trade-offs and scenarios where one technique may perform better than the other.
+
+### Part 2: Clustering Methods
+
+Apply clustering techniques (K-Means, DBSCAN, and Hierarchical clustering) to a selected dataset. The goal is to understand how each method works, compare their performance, and interpret the results.
+
+1. **Clustering Methods:**
+   - Apply **K-Means**, **DBSCAN**, and **Hierarchical clustering** to your dataset.
+   - Write a technical summary for each method (2–4 paragraphs per method) explaining how it works, its purpose, and any model selection methods used (e.g., Elbow, Silhouette).
+
+2. **Results Section:**
+   - Discuss and visualize the results of each clustering analysis.
+   - Compare the performance of different clustering methods, noting any insights gained from the analysis.
+   - Visualize cluster patterns and how they relate (if at all) to existing labels in the dataset.
+   - Use professional, labeled, and clear visualizations that support your discussion.
+
+3. **Conclusion:**
+   - Summarize the key findings and their real-world implications in a non-technical way. Focus on the most important results and how they could apply to practical situations.
+

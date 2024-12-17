@@ -1,0 +1,284 @@
+# Media Cloud: Measuring Attention
+
+This data comes from a comprehensive platform offering access to a vast collection of news articles and media content. The API enables programmatic access to analyze news coverage, track topics across different media sources, and study media ecosystems over time.
+
+Reference:
+
+- https://github.com/mediacloud/api-tutorial-notebooks
+- https://www.mediacloud.org
+
+
+```python
+# ! pip install mediacloud
+```
+
+
+```python
+import json
+import os
+
+home_dir = os.environ['HOME']
+
+with open(f'{home_dir}/.api-keys.json') as f:
+    keys = json.load(f)
+
+# Your API key
+API_KEY = keys['MEDIACLOUD_API_KEY']
+```
+
+## Set Up API Key
+
+
+```python
+# Set up your API key and import needed things
+import os, mediacloud.api
+from importlib.metadata import version
+from dotenv import load_dotenv
+import datetime as dt
+from IPython.display import JSON
+import bokeh.io
+
+bokeh.io.reset_output()
+bokeh.io.output_notebook()
+search_api = mediacloud.api.SearchApi(API_KEY)
+f'Using Media Cloud python client v{version("mediacloud")}'
+```
+
+
+<style>
+    .bk-notebook-logo {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAOkSURBVDiNjZRtaJVlGMd/1/08zzln5zjP1LWcU9N0NkN8m2CYjpgQYQXqSs0I84OLIC0hkEKoPtiH3gmKoiJDU7QpLgoLjLIQCpEsNJ1vqUOdO7ppbuec5+V+rj4ctwzd8IIbbi6u+8f1539dt3A78eXC7QizUF7gyV1fD1Yqg4JWz84yffhm0qkFqBogB9rM8tZdtwVsPUhWhGcFJngGeWrPzHm5oaMmkfEg1usvLFyc8jLRqDOMru7AyC8saQr7GG7f5fvDeH7Ej8CM66nIF+8yngt6HWaKh7k49Soy9nXurCi1o3qUbS3zWfrYeQDTB/Qj6kX6Ybhw4B+bOYoLKCC9H3Nu/leUTZ1JdRWkkn2ldcCamzrcf47KKXdAJllSlxAOkRgyHsGC/zRday5Qld9DyoM4/q/rUoy/CXh3jzOu3bHUVZeU+DEn8FInkPBFlu3+nW3Nw0mk6vCDiWg8CeJaxEwuHS3+z5RgY+YBR6V1Z1nxSOfoaPa4LASWxxdNp+VWTk7+4vzaou8v8PN+xo+KY2xsw6une2frhw05CTYOmQvsEhjhWjn0bmXPjpE1+kplmmkP3suftwTubK9Vq22qKmrBhpY4jvd5afdRA3wGjFAgcnTK2s4hY0/GPNIb0nErGMCRxWOOX64Z8RAC4oCXdklmEvcL8o0BfkNK4lUg9HTl+oPlQxdNo3Mg4Nv175e/1LDGzZen30MEjRUtmXSfiTVu1kK8W4txyV6BMKlbgk3lMwYCiusNy9fVfvvwMxv8Ynl6vxoByANLTWplvuj/nF9m2+PDtt1eiHPBr1oIfhCChQMBw6Aw0UulqTKZdfVvfG7VcfIqLG9bcldL/+pdWTLxLUy8Qq38heUIjh4XlzZxzQm19lLFlr8vdQ97rjZVOLf8nclzckbcD4wxXMidpX30sFd37Fv/GtwwhzhxGVAprjbg0gCAEeIgwCZyTV2Z1REEW8O4py0wsjeloKoMr6iCY6dP92H6Vw/oTyICIthibxjm/DfN9lVz8IqtqKYLUXfoKVMVQVVJOElGjrnnUt9T9wbgp8AyYKaGlqingHZU/uG2NTZSVqwHQTWkx9hxjkpWDaCg6Ckj5qebgBVbT3V3NNXMSiWSDdGV3hrtzla7J+duwPOToIg42ChPQOQjspnSlp1V+Gjdged7+8UN5CRAV7a5EdFNwCjEaBR27b3W890TE7g24NAP/mMDXRWrGoFPQI9ls/MWO2dWFAar/xcOIImbbpA3zgAAAABJRU5ErkJggg==);
+    }
+</style>
+<div>
+    <a href="https://bokeh.org" target="_blank" class="bk-notebook-logo"></a>
+    <span id="f82c1b51-f0a0-43e6-aa84-8c61f4d54897">Loading BokehJS ...</span>
+</div>
+
+
+
+
+
+
+
+
+    'Using Media Cloud python client v4.3.0'
+
+
+
+## Attention from a Single Media Source
+
+
+```python
+# check how many stories include the query phrase in the Washington Post (media id #2)
+my_query = 'politics' # note the double quotes used to indicate use of the whole phrase
+start_date = dt.date(2019, 7, 1)
+end_date = dt.date(2023, 7, 1)
+sources = [1, 2, 3] # NY Times, Washington Post, CS Monitor
+
+search_api.story_count(my_query, start_date, end_date, source_ids=sources)
+my_query_name = my_query.replace('"', '')
+```
+
+
+```python
+# you can see this count by day as well
+results = search_api.story_count_over_time(my_query, start_date, end_date, source_ids=sources)
+```
+
+```python
+# and you can chart attention over time with some simple notebook work (using Bokeh here)
+import pandas as pd
+from bokeh.plotting import figure, show
+from bokeh.models import ColumnDataSource
+df = pd.DataFrame.from_dict(results)
+df['date']= pd.to_datetime(df['date'])
+source = ColumnDataSource(df)
+p = figure(x_axis_type="datetime", width=900, height=250)
+p.line(x='date', y='count', line_width=2, source=source)  # your could use `ratio` instead of `count` to see normalized attention
+show(p)
+```
+
+
+
+<div id="e0d1080d-c42e-4631-aec6-46bba2be0093" data-root-id="p1004" style="display: contents;"></div>
+
+
+
+
+
+### Normalizing within a Source
+
+
+```python
+results = search_api.story_count(my_query, start_date, end_date, source_ids=sources)
+source_ratio = results['relevant'] / results['total']
+f'{source_ratio:.2%} of the media sources {sources} stories were about {my_query_name}'
+```
+
+
+
+
+    '11.46% of the media sources [1, 2, 3] stories were about politics'
+
+
+
+## Research Within a Country - using collections
+
+
+```python
+# check in our collection of country-level US National media sources
+US_NATIONAL_COLLECTION = 34412234
+results = search_api.story_count(my_query, start_date, end_date, collection_ids=[US_NATIONAL_COLLECTION])
+us_country_ratio = results['relevant'] / results['total']
+# '{:.2%} of stories from national-level US media sources mentioneded "climate change"'.format(us_country_ratio)
+f'{us_country_ratio:.2%} of stories from national-level US media sources mentioneded {my_query_name}'
+```
+
+
+
+
+    '4.94% of stories from national-level US media sources mentioneded politics'
+
+
+
+
+```python
+# now we can compare this to the source-level coverage
+coverage_ratio = 1 / (source_ratio / us_country_ratio)
+f'{my_query_name} received {coverage_ratio:.2%} times less coverage in {sources} than you might expect based on other US national papers'
+```
+
+
+
+
+    'politics received 43.07% times less coverage in [1, 2, 3] than you might expect based on other US national papers'
+
+
+
+
+```python
+# or compare to another country (India in this case)
+INDIA_NATIONAL = 34412118
+results = search_api.story_count('"climate change"', start_date, end_date, collection_ids=[INDIA_NATIONAL])
+india_country_ratio = results['relevant'] / results['total']
+f'{india_country_ratio:.2%} of stories from national-level Indian media sources mentioned {my_query_name}'
+```
+
+
+
+
+    '0.50% of stories from national-level Indian media sources mentioned politics'
+
+
+
+
+```python
+coverage_ratio =  1 / (india_country_ratio / us_country_ratio)
+f'at the national level {my_query_name} is covered {coverage_ratio:.2%} times less in India than the US'
+```
+
+
+
+
+    'at the national level politics is covered 987.39% times less in India than the US'
+
+
+
+## Listing Stories
+
+
+```python
+# grab the most recent stories about this issue
+stories, _ = search_api.story_list(my_query, start_date, end_date)
+stories[:3]
+```
+
+
+
+
+    [{'id': '5b95e9e6c1aafd926e6adf48bb3fd28e7241fff54322889d811bda065e6bbde8',
+      'media_name': 'yourmiddleeast.com',
+      'media_url': 'yourmiddleeast.com',
+      'title': 'The Arabs’ Moment',
+      'publish_date': datetime.date(2020, 3, 6),
+      'url': 'https://yourmiddleeast.com/2020/03/06/the-arabs-moment/',
+      'language': 'en',
+      'indexed_date': datetime.datetime(2024, 11, 25, 4, 59, 44, 377339)},
+     {'id': 'f709469e307fcba31cfd1fca3a3165c76754c9b8a42f72f1e42423b38f791977',
+      'media_name': 'yahoo.com',
+      'media_url': 'yahoo.com',
+      'title': "Black voters power Joe Biden's Super Tuesday success",
+      'publish_date': datetime.date(2020, 3, 5),
+      'url': 'https://news.yahoo.com/black-voters-power-bidens-super-055038667.html',
+      'language': 'en',
+      'indexed_date': datetime.datetime(2024, 11, 25, 4, 59, 42, 376413)},
+     {'id': 'cd8607202f26bed7d766b5a884decf83e73ebbeea46095ebbb6f0fb1379ba6b9',
+      'media_name': 'patrika.com',
+      'media_url': 'patrika.com',
+      'title': 'ईरान: Coronavirus से विदेश मंत्री के सलाहकार की गई जान, देश में अब तक 107 की मौत',
+      'publish_date': datetime.date(2020, 3, 6),
+      'url': 'https://www.patrika.com/gulf-news/iran-foreign-minister-s-advisor-hossein-sheikholeslam-dead-by-coronavirus-107-dead-in-country-so-far-5864564/',
+      'language': 'hi',
+      'indexed_date': datetime.datetime(2024, 11, 25, 4, 59, 39, 796407)}]
+
+
+
+
+```python
+# let's fetch all the stories matching our query on one day
+all_stories = []
+more_stories = True
+pagination_token = None
+story_start_date = dt.date(2023,11,29)
+story_end_date = dt.date(2023,11,30)
+while more_stories:
+    page, pagination_token = search_api.story_list(my_query, story_start_date, story_end_date,
+                                                   collection_ids=[US_NATIONAL_COLLECTION],
+                                                   pagination_token=pagination_token)
+    all_stories += page
+    more_stories = pagination_token is not None
+len(all_stories)
+```
+
+
+
+
+    1203
+
+
+
+### Writing a CSV of Story Data
+
+
+```python
+import csv
+
+story_start_date_str = story_start_date.strftime('%Y%m%d')
+story_end_date_str = story_end_date.strftime('%Y%m%d')
+
+fieldnames = ['id', 'publish_date', 'title', 'url', 'language', 'media_name', 'media_url', 'indexed_date']
+output_filename = f"./mediacloud_api_data/{my_query_name.replace(' ', '_')}-storylist-{story_start_date_str}_{story_end_date_str}.csv"
+output_dir = os.path.dirname(output_filename)
+
+if output_dir and not os.path.exists(output_dir):
+    os.makedirs(output_dir)  # Create the directory if it doesn't exist
+    
+with open(output_filename, 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames, extrasaction='ignore')
+    writer.writeheader()
+    for s in all_stories:
+        writer.writerow(s)
+```
+
+## Top Media Sources
+
+
+```python
+# List media producing the most stories matching the search
+INDIA_NATIONAL = 34412118
+results = search_api.sources(my_query, start_date, end_date, collection_ids=[INDIA_NATIONAL])
+```

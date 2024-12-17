@@ -1,0 +1,72 @@
+# News API
+
+This data comes from a simple HTTP REST API for searching and retrieving live articles from all over the web. It provides access to headlines and articles from over 80,000 news sources worldwide, supporting features like keyword search, source filtering, and date range queries.
+
+This data was the most complicated to extract into a useful format due the the data originally formatted as a JSON file. Reading in the JSON file and looking through the different keys avaialable we were able to extract the data needed ending up with a csv dataframe containing 10 attributes which include data such as article content, article dates/times, article source, article author, and article title.
+
+In this section we also attempted to label each of the articles using a Open AI’s API so we could test our model on a second dataset of raw data. Unfortunately, what we found is that none of the OpenAI API models have access to real-time data in order to validate the claims. We did some research into other LLM APIs and found that none of the large LLM APIs have access to real-time or constantly updated information.
+
+```python
+import requests
+import json
+import datetime
+
+today_date = datetime.datetime.now().strftime("%Y-%m-%d")
+thirty_days_ago = (datetime.datetime.now() - datetime.timedelta(days=30)).strftime("%Y-%m-%d")
+
+with open('/Users/pengli/.api-keys.json') as f:
+    keys = json.load(f)
+
+# Your API key
+API_KEY = keys['NEWS_API_KEY']
+
+def search_news(search_query, from_date=thirty_days_ago, to_date=today_date, verbose=False):
+    '''
+    date format: YYYY-MM-DD
+    from_date cannot exceed 30 days in the past from the current date due to the limitation of a 30-day window for the free tier of newsapi
+    '''
+    
+    # Base URL
+    url = "https://newsapi.org/v2/everything"
+
+    # Parameters for the API request
+    params = {
+        "q": search_query,               # Keyword to search for
+        "language": "en",              # Language filter
+        "sortBy": "relevancy",         # Sorting (relevancy, popularity, publishedAt)
+        # "pageSize": 20,                # Number of results per page
+        "from": from_date,               # Start date
+        "to": to_date,                 # End date
+        "apiKey": API_KEY              # API key
+    }
+    
+    # Create a timestamped output filename
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_filename = f"{search_query.replace(' ', '_')}_{timestamp}.json"
+    
+    # Send GET request
+    response = requests.get(url, params=params)
+
+    # Parse JSON response
+    if response.status_code == 200:
+        data = response.json()
+        articles = data.get("articles", [])
+        if verbose:
+            for article in articles:
+                print(f"Title: {article['title']}")
+                print(f"Source: {article['source']['name']}")
+                print(f"Published At: {article['publishedAt']}")
+                print(f"URL: {article['url']}")
+                print("\n")
+        # Save results to a JSON file in the ./data directory
+        output_filename = f"./news_api_data/{search_query.replace(' ', '_')}_{timestamp}.json"
+        with open(output_filename, 'w') as f:
+            json.dump(data, f, indent=4)
+    else:
+        print(f"Error: {response.status_code}")
+```
+
+
+```python
+search_news('politics')
+```

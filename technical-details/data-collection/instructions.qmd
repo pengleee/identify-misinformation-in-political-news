@@ -1,0 +1,76 @@
+# Instructions 
+
+`Note`: You should remove these instruction once you have read and understood them. They should not be included in your final submission.
+
+`Remember:` Exactly what do you put on this page will be specific you your project and data. Some things might "make more sense" on one page rather than another, depending on your workflow. Organize your project in a logical way that makes the most sense to you.  
+
+## Suggested page structure
+
+Here’s one suggested structure for organizing your technical pages. You can adjust this as needed:
+
+`Audience`:Remember that these are written for a technical audience. Assume they have completed the DSAN program, but would appreciate refreshers of the important concepts. 
+
+- **Introduction and Motivation:** Briefly outline your plan. What are you doing on this page, and why? Provide context and explain the goals of your analysis.
+- **Overview of Methods:** Give a concise explanation of the methods used. For example, if using K-Means clustering, describe what it is, how it works, the inputs and outputs, and key hyperparameters.
+- **Code:** Include the code you used to implement your workflow.
+- **Summary and Interpretation of Results:** Summarize your findings, interpret the results, and discuss their technical implications.
+
+In the provide repo, these subsections have been included in the `data-collection` file as separate `.qmd` files that can be embedded using the `{{< include >}}` tag. 
+
+## What to address 
+
+The following is a list of some of the things you should address on this page. This list is not exhaustive, and you should use your judgment to decide what is most relevant to your project.
+
+On this page, you will focus on **data collection**, which is an essential step for future analysis. You should have already selected a specific data-science question that can be addressed in a data-driven way. 
+
+It is recommended that you focus on one or two of the following data formats, **text**, **tabular**, **image**, **geospatial**, or **network** data. 
+
+**Tabular** (e.g. CSV files) and **text** formats are highly recommended, as these are covered most thoroughly in the course. Deviating from these formats may require additional work on your end. Please avoid **timeseries** data formats, as these require special methods not covered in the course. You can include as many additional formats as you want. Your project will revolve around the data you gather and will include data collection, analysis, visualization, and storytelling.
+
+## Start collecting data:
+
+Begin gathering your data and document the methods and sources on the **Data Collection** page of your project. Include screenshots or example tables to illustrate the data collection process without displaying entire datasets. Ensure **transparency** so anyone can replicate your work.
+
+## Saving the raw data  
+
+- During the collection phase, save the collected data locally to the `data/raw-data` folder, in the root of the project, for later processing. (Do not sync this folder to GitHub.)
+- Remember, the "raw data" should typically be left "pristine", to ensure replicability. 
+- Later when you clean the data, you should save the cleaned data to the `data/processed-data` folder, in the root of the project.
+- You should also save files you download manually from online to this folder
+
+## Requirements:
+
+- Your data must be relevant to the project’s overall goals and help solve your research questions.
+- You must use **at least one API** to collect your data.
+- Ensure you have at least one **regression target**: a continuous quantity that can be used for regression prediction with other features.
+- Ensure you have at least one **binary classification target**: a two-class (A,B) label that can be predicted using other features.
+- Ensure you have at least one **multiclass-classification target**: a multi-class (A,B,C ...) label that can be predicted using other features.
+- **Do not use a Kaggle topic**—this project is meant to simulate a real-world project. Kaggle datasets are typically too clean and have already been prepped for analysis, which doesn't align with the project's goals.
+  
+Focus on data that tells a compelling story and supports the techniques covered in the class (e.g., clustering, classification, regression).
+
+# What do include on this page  
+
+To ensure clarity and transparency throughout your project, your data collection documentation should include the following:
+
+0. **Include all code used for data collection** in the notebook below
+
+1. **Data Source Information**  
+   - Specify where the data comes from, whether public datasets, APIs, or original collection.
+   - Provide links to datasets or API documentation and explain their relevance to the project.
+
+2. **Data Collection Methods**  
+   - If you used an API or web scraping, explain the tools (e.g., `BeautifulSoup`, `Selenium`) and the process.
+   - Include links to your code for replicating data collection.
+
+3. **Data Structure and Format**  
+   - Describe the structure of your raw data (e.g., rows, columns, data types) and its format (CSV, JSON, etc.).
+
+4. **Linking to Data**  
+   - Include links to the **raw dataset**, ensuring transparency and allowing replication.
+
+5. **Code and Reproducibility**  
+   - Link to all relevant code, including data collection , with clear documentation to enable replication.
+
+6. **Transparency and Replicability**  
+   - Ensure your entire workflow is transparent and reproducible by linking all data, code, and documentation. This allows others to follow your process from start to finish.
